@@ -39,6 +39,7 @@ header div {
 
 header div ul {
     list-style-type: none;
+    
 }
 
 header div ul li {
@@ -120,13 +121,22 @@ p {
 }
 
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
+}
+
+
+@media screen and (max-width:1012px){ 
+    header ul{ font-size: 18px}
+}
+
+@media screen and (min-width:1012px){ 
+    header ul{ font-size: 20px}
 }
