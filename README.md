@@ -1,12 +1,14 @@
 # Code Refactor Starter Code
 
-Identified link for Seach Engine Optimization wasn't working and fixed by adding the id "search-engine-optimization" under <div class="content" / div class="hero-pic">, line 31.
+Identified link for Seach Engine Optimization wasn't working and fixed by adding the id "search-engine-optimization" under <div class="content" / div class="hero-pic">, line 31
+
+Changed <title> from "website" to "Horiseon"
 
 Changed to semantic element <header> from div for header section
 
-Changed to semantic element <section> from 1st <div> in body
+Changed to semantic element <main> from 1st <div> in body
 
-Changed to semantic element <article> from <div class="hero-pic"/> sections
+Changed to semantic element <figure> from <div class="hero-pic"/> sections
 
 Moved Header into Head
 
