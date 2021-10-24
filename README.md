@@ -40,6 +40,7 @@ The purpose of this excercise is to "refactor" existing code, completing the tas
 
 - Successfully cloned started code to local computer and created new 
 Git repository (Challenge1A) to hold reworked code and README.md
+https://github.com/RauchDavis13/Challenge1A.git
 
 - Successfully created live Git based URL
 https://rauchdavis13.github.io/Challenge1A/
