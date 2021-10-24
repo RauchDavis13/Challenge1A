@@ -44,3 +44,9 @@ https://github.com/RauchDavis13/Challenge1A.git
 
 - Successfully created live Git based URL
 https://rauchdavis13.github.io/Challenge1A/
+
+
+## Thank you's....
+Dustin Erwin (TA)
+Robert Evanik
+Nicholas Perel
