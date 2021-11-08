@@ -1,7 +1,8 @@
 :root {
   --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: #0863f7;
+  --secondary-color: #022e76;
+  --tertiary-color: #f4f8fd;
+  
 }
 
 * {
@@ -11,8 +12,8 @@
 }
 
 body {
-  color: #39a6b2;
-  font-family: Helvetica, Arial, sans-serif;
+  color: var(--secondary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -20,7 +21,6 @@ body {
 
 header {
   padding: 20px 35px;
-  background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -28,19 +28,18 @@ header {
   position: -webkit-sticky;
   top: 0;
   background-image: url("../images/headerBike.jpg");
-  /*background-size: cover;*/
   background-attachment: fixed;
   background-position: 50%;
-  /*background-position-x: 10px;*/
   background-position-y: -19%;
   z-index: 9999;
 }
 
 header h1 {
   font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   font-size: 36px;
-  color: #0863f7;
+  color: var(--secondary-color);
   text-shadow: -1px 1px 2px rgba(0, 0, 0, 1),
   1px -1px 1px rgba(255, 255, 255, 1),
   -1px -1px 0 rgb(129, 128, 128);
@@ -56,13 +55,19 @@ header h1 {
   -1px -1px 0 rgba(0, 0, 0, 1);
 }
 
-header a {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+header a, footer a {  
   text-decoration: none;
-  color: white;
+  font-size: 1.65vw;
+  color: var(--secondary-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: -1px 1px 1px rgb(251, 251, 253),
+                1px -1px 1px rgb(252, 251, 253),
+                -1px -1px 0 rgb(101, 101, 102);
+
 }
 
 header nav {
+
   margin: 7px 0;
 }
 
@@ -74,17 +79,18 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li a {
+header nav ul li a, footer nav ul li a {
   padding: 10px 15px;
   font-weight: normal;
-  font-size: 1.55vw;
-  text-shadow: -1px 1px 2px rgba(0, 0, 0, 1),
-                1px -1px 0 rgba(0, 0, 0, 1),
-                -1px -1px 0 rgba(0, 0, 0, 1);
+  font-size: 1.65vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: -1px 1px 3px rgba(0, 0, 0, 1),
+                1px -1px 1 rgba(0, 0, 0, 1),
+                -1px -1px 1 rgb(7, 3, 77);
 }
 
-header nav ul li a:hover {
-  background: var(--primary-color);
+header nav ul li a:hover, footer nav ul li a:hover {
+  background: white;
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
@@ -102,8 +108,6 @@ header nav ul li a:hover {
   position: relative;
   background-image: url("../images/top-box3.jpg");
   display: flex;
-  /*justify-content: center;*/
-  /*flex-wrap: wrap;*/
 }
 
 .top-box h1 {
@@ -118,68 +122,36 @@ header nav ul li a:hover {
   bottom: 10px;
   right: 10px;
   display: flex;
-  /*flex-wrap: wrap;*/
 }
 /* top box section ends here */
 
 
-/* FOOTER STYLES START */
-footer {
-  background: var(--primary-color)
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
-footer h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
-/* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
 section {
-  padding: 60px;
+  padding: 25px;
 }
 
 /* HERO STYLES START */
 .hero {
-  /*display: flex;
-  jusify-content: center;
-  flex-wrap: wrap;
-  /*align-items: flex-start;*/
   background-color: white;
-
 }
 
-#about-me {
-  /*position: relative;*/
+.sub-box {
   display: flex;
   justify-content: space-between;
-  /*flex-wrap: wrap;*/
+  margin: 5px;
   border: 3px solid var(--secondary-color);
   max-height: 150%;
-  position: relative;
+  background-color: var(--tertiary-color);
 
 }
 .side {
-  margin: 10px 10px 10px 100px;
+  margin: 10px 10px 10px 150px;
   padding: 20px;
   width: 5%;
-  /*width: 100px;*/
-  background-color: rgb(228, 243, 250);
+  background-color: var(--tertiary-color);
   border-right: 10px solid var(--secondary-color);
   display: flex;
   justify-content: right;
@@ -187,8 +159,9 @@ section {
 }
 
 .side h1 {
+  margin: 50px 0 0 0;
   font-size: 30px;
-  color: black;
+  color: var(--secondary-color);
   padding: 5px;
   text-align: right;
   right: 10px;
@@ -207,25 +180,107 @@ section {
   background-size: 115%;
   background-repeat: no-repeat;
   width: 70%;
-  /*display: flex;*/
-  /*justify-content: left;*/
-  /*flex-wrap: wrap;*/
  }
 
 .my-info h2, p, h3 {
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 1),
-  1px -1px 0 rgba(0, 0, 0, 1),
+  1px -1px 0 rgb(196, 193, 193),
   -1px -1px 0 rgba(0, 0, 0, 1);
   display: flex;
   flex-wrap: wrap;
 }
 
+.my-info h2, p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(15, 5, 71);
+}
 
 
+.work-box {
+  margin: 10px;
+  padding: 30px;
+  height: 1000px;
+  width: 70%;
+  border: 2px solid rgb(3, 116, 12);
+  background-color: rgb(255, 255, 255);
+}
 
+.work-primary {  
+  height: 450px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--secondary-color);
+  background-image: url("../images/hero-bg.jpg");
+  background-attachment: local;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.work-one {
+  margin: 10px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--tertiary-color);
+  height: 100px; 
+  position: absolute;
+  bottom: 10px; 
+}
 
+.work-one h3, p {
+  margin: 5px;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
 
+/* FOOTER STYLES START */
+footer {
+  background: var(--primary-color);
+  margin: 50px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .side {
+  margin: 10px 10px 10px 173px;
+}
+
+.contact-box {
+  margin: 10px 20px 10px 10px;
+  /*position: relative; */
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+ }
+
+footer nav {
+  display: flex;
+  /*position: absolute; */
+  right 20px;
+}
+
+.contact-box nav ul {
+  align-items: center;
+  list-style: none;
+}
+
+.ftr-info {
+  margin: 10px 20px 10px 10px;
+  width: 350px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.ftr-info h1 address h3 {
+  color: var(--secondary-color);
+  text-shadow: none;
+}
+/* END FOOTER STYLES */
 
 
 
@@ -321,84 +376,7 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /
-/* REACH OUT STYLES START */
-.contact {
-  background: var(--secondary-color);
-}
 
-.contact h2 {
-  color: var(--primary-color);
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
-.contact-info iframe {
-  height: 400px;
-}
-
-.contact-info div {
-  color: white;
-}
-
-.contact-info h3 {
-  color: var(--primary-color);
-  font-size: 32px;
-}
-
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
-
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: #39a6b2;
-}
-
-.contact-info a {
-  color: var(--primary-color);
-}
-/* REACH OUT STYLES END */
 
 /* UTILITIES */
 .text-left {
